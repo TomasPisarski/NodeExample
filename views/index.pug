@@ -1,0 +1,11 @@
+
+html 
+    head 
+        meta(charset='UTF-8')
+        title NoteApp 
+        link(rel="stylesheet", href="index.css")
+    body#body  
+        each note in notes 
+            - var title=data.title , body=data.body
+            include note.pug
+        
